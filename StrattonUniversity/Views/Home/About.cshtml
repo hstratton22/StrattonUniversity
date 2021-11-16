@@ -11,6 +11,7 @@
         <th>
             Enrollment Date
         </th>
+        <th> <b>|</b> </th>
         <th>
             Students
         </th>
@@ -19,10 +20,13 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>
+            <td class="text-center">
                 @Html.DisplayFor(modelItem => item.EnrollmentDate)
             </td>
             <td>
+
+            </td>
+            <td class="text-center">
                 @item.StudentCount
             </td>
         </tr>
